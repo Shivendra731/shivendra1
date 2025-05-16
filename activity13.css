@@ -1,0 +1,105 @@
+/* Animated gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #00f0ff, #1e90ff, #7b2ff7, #ff3cac);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Card with dark background and glow */
+  .card {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Main heading */
+  .main-name {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Neon pink name */
+  .name-glow {
+    color: #fff;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff33cc;
+    margin: 0;
+  }
+  
+  /* Line */
+  .card hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 15px 0;
+  }
+  
+  /* Cyan class text with glow */
+  .class-glow {
+    color: #00ffff;
+    font-size: 1.4em;
+    text-shadow: 0 0 10px #00ffff;
+    margin: 10px 0;
+  }
+  
+  /* Yellow italic school name */
+  .school-name {
+    color: #ffcc00;
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 5px 0 15px 0;
+    text-shadow: 0 0 8px #ffcc00;
+  }
+  
+  /* Intro text */
+  .intro {
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  /* Glowing button */
+  .glow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .glow-button:hover {
+    background-color: #00ffff;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+  
